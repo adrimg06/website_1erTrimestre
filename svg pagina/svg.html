@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="../style.css">
+<script>
+    function printPage() {
+    window.print();
+    }
+</script>
+<body>
+    <ul>
+        <li><a  href="../index.html">Home</a></li>
+        <li><a href="../html pagina/html.html">HTML</a></li>
+        <li><a  class="active" href="../svg pagina/svg.html">SVG</a></li>
+        <li><a href="../css pagina/css.html">CSS</a></li>
+        
+      </ul>
+<h1>SVG</h1>
+
+<h2>What is the SVG format and what advantages does it have?</h2>
+
+<p> <a href="https://www.w3schools.com/graphics/svg_intro.asp">SVG</a> (Scalable Vector Graphics) is a little-known but very useful vector format for online use due to its flexibility and 
+    for the ability to offer quality graphics.</p>
+
+<p>The SVG format is totally unknown to many. When we want to place a graphic on the web, 
+    On most occasions we opt for JPG. If we need transparency or animation, we opt for a PNG or GIF.
+     What many don't know is that vector files can be used for use in browsers.</p>
+
+ <h2>Open and compatible standard</h2>
+    <p>As well as the Flash format, which was also vector, owned by Macromedia, that is, Adobe, 
+        The SVG format is an open, standard, XML-based format. Although the first versions could not be viewed in different browsers, 
+        Today it is already a standard that works without problems in all browsers. SVG became a W3C recommendation in September 2001, so it is now supported by everyone. 
+        Being an XML-based format we need some code control to make an SVG file work properly.</p>
+
+<h2>Fonts</h2>
+<p>The SVG format allows us, on the one hand, to use fonts with paths but also allows us to include them within the file itself in TrueType and Type 1 format. 
+    which gives us an extraordinary capacity in that search engines are able to index it. 
+    It must be taken into account that for pure text placed as typography it must be either from the fonts installed in the system or included as a CSS style.</p>
+
+<p>Projects like Iconic also use the SVG format to make a font with icons useful for different uses and size and variation needs depending on the actions we want. 
+    You can see examples on their website with which you will really and in-depth understand the true use of the SVG format.</p>
+
+<h2>INTERACTIVE</h2>
+<p>SVG files weigh little, just like a vector file would. They support CSS styles, 
+    So if we change the style on our website it will also change within the file. 
+    These types of files can include scripts that allow dynamic paths. 
+    It can support actions such as rollovers or click changes.</p>
+
+<h2>RESPONSIVE ICONS</h2>
+<p>Currently all websites are migrating to the responsive format, so we find a multitude of icons that are resized depending on the width of the screen. 
+    Normally the way it works is to replace a bitmap icon with a smaller one. With SVG we can use the same one and have it reduced little by little,
+     or to use various sizes but all of them are SVG with the advantage of better visualization as they are vector.</p>
+
+ <h1>SVG Examples:</h1>
+
+    <h2>First we will make a circle</h2>
+    <p>&lt;svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"&gt;
+        &lt;circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" /&gt;
+        Sorry, your browser does not support inline SVG.
+        &lt;svg&gt; &lt;/p&gt;
+ <img src="../svg pagina/bola.PNG" alt="bola">
+  
+ <br>
+
+ <h2>It is used to adjust the size of the image. </h2>
+    <p>&lt;svg height="200" width="300" xmlns="http://www.w3.org/2000/svg"&gt;
+        &lt;image width="300" height="200" href="pulpitrock.jpg" /&gt;
+        Sorry, your browser does not support inline SVG.  
+        &lt;/svg&gt;</p>
+ <img src="../svg pagina/ajuste.png " alt="h1">
+
+ <br>
+
+ <h2>To create triangles, rectangles and circles.</h2>
+    <p>&lt;svg width="600" height="220" xmlns="http://www.w3.org/2000/svg"&gt;
+        &lt;polygon points="50,10 0,190 100,190" fill="lime" /&gt;
+        &lt;rect width="150" height="100" x="120" y="50" fill="blue" /&gt;
+        &lt;circle r="45" cx="350" cy="100" fill="red" /&gt;
+        &lt;text x="420" y="100" fill="red">I love SVG! &lt;/text&gt;
+        Sorry, your browser does not support inline SVG.
+        &lt;/svg&gt;</p>
+ <img src="../svg pagina/figuras.png" alt="h1">
+
+ <br>
+
+ <h2>To add the blur effect.</h2>
+    <p>
+        &lt;svg height="100" width="100" xmlns="http://www.w3.org/2000/svg"&gt;
+        &lt;defs>
+        &lt;filter id="f1" x="0" y="0" xmlns="http://www.w3.org/2000/svg"&gt;
+        &lt;feGaussianBlur in="SourceGraphic" stdDeviation="15" /&gt;
+        &lt;/filter&gt;
+        &lt;/defs&gt;
+        &lt;rect width="90" height="90" fill="yellow" filter="url(#f1)" /&gt;
+        Sorry, your browser does not support inline SVG.  
+        &lt;/svg&gt;</p>
+ <img src="../svg pagina/blur.png" alt="h1">
+
+ <br>
+
+ <h2>To put images on the web page.</h2>
+    <p>
+        &lt;svg height="200" width="350" xmlns="http://www.w3.org/2000/svg"&gt;
+        &lt;path id="lineAC" d="M 30 180 q 150 -250 300 0" stroke="blue" stroke-width="2" fill="none"/&gt;
+        &lt;text style="fill:red;font-size:25px;"&gt;
+        &lt;textPath href="#lineAC" startOffset="80">I love SVG! I love SVG!&lt;/textPath&gt;
+        &lt;/text&gt;
+        Sorry, your browser does not support inline SVG.
+        &lt;/svg&gt;</p>
+ <img src="../svg pagina/puente.PNG" alt="h1">
+
+ <footer>
+    <input type="button" value="Descarga esta página como PDF" onclick="printPage()">
+</footer>
+
+</body>
+</html>

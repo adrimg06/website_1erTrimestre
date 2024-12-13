@@ -1,0 +1,38 @@
+
+        body {
+            
+        }
+
+        .container {
+            display: flex;           
+            justify-content: center; 
+            gap: 70px;               
+            margin-top: 30px;        
+        }
+
+        .item {
+            text-align: center; 
+        }
+
+        img {
+            max-width: 200px; 
+            height: auto;     
+        }
+
+        a {
+            display: block;   
+            margin-top: 10px; 
+            text-decoration: none;
+            color: blue;
+        }
+
+
+        
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+   
